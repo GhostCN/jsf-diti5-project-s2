@@ -30,5 +30,8 @@ public class LocationFacade extends AbstractFacade<Location> implements Location
     public LocationFacade() {
         super(Location.class);
     }
+
+
+
     
 }

@@ -77,34 +77,34 @@
 						 styleClass = "table table-striped table-hover">
 
 				<h:column>
-					<f:facet name = "Prenom">Prenom</f:facet>
+					<f:facet name = "header">Prenom</f:facet>
 					#{client.prenom}
 				</h:column>
 
 				<h:column>
-					<f:facet name = "Nom">Nom</f:facet>
+					<f:facet name = "header">Nom</f:facet>
 					#{client.nom}
 				</h:column>
 
 				<h:column>
-					<f:facet name = "Numero piece">Numero piece</f:facet>
+					<f:facet name = "header">Numero piece</f:facet>
 					#{client.numpiece}
 				</h:column>
 
 				<h:column>
-					<f:facet name = "Adresse">Adresse</f:facet>
+					<f:facet name = "header">Adresse</f:facet>
 					#{client.adresse}
 				</h:column>
 				<h:column>
-					<f:facet name = "Telephone">Telephone</f:facet>
+					<f:facet name = "header">Telephone</f:facet>
 					#{client.tel}
 				</h:column>
 				<h:column>
-					<f:facet name = "Email">Email</f:facet>
+					<f:facet name = "header">Email</f:facet>
 					#{client.email}
 				</h:column>
 				<h:column>
-					<f:facet name = "Action">Action</f:facet>
+					<f:facet name = "header">Action</f:facet>
 					<h:form >
 						<h:commandButton style="margin: 5px" styleClass="btn btn-primary btn-sm" action="#{clientBean.editClient(client)}"  value="Editer"/>
 						<h:commandButton style="margin: 5px" styleClass="btn btn-primary btn-sm" action="#{clientBean.deleteClient(client)}"  value="Supprimer"/>

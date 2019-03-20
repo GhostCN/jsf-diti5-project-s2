@@ -12,6 +12,7 @@ import org.hibernate.Session;
 
 
 import javax.ejb.Stateless;
+import java.util.List;
 
 /**
  *
@@ -31,5 +32,13 @@ public class ClientFacade extends AbstractFacade<Client> implements ClientFacade
     }
 
 
-    
+    @Override
+    public Client getClientByNumpiece(String numpiece) {
+       List<Client> clients=  getSession().createQuery("SELECT c from Client c where c.numpiece  = :nump").setParameter("nump",numpiece).list();
+       if(clients.size() > 0)
+       {
+           return  clients.get(0);
+       }
+        return null;
+    }
 }

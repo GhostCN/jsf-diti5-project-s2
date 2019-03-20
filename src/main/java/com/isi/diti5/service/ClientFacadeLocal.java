@@ -26,6 +26,7 @@ public interface ClientFacadeLocal {
     void remove(Client client);
      Client find(Long id);
      List<Client> findAll();
+     Client getClientByNumpiece(String numpiece);
 
 
 }

@@ -6,7 +6,29 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c45fb0b0-0699-40a5-9b41-389f778c82d1" name="Default Changelist" comment="" />
+    <list default="true" id="c45fb0b0-0699-40a5-9b41-389f778c82d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/VoitureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/locationdetails.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/locationedit.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/voitureedit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DealerCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DealerCar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacadeLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacadeLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/LocationFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/LocationFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/client.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/client.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/location.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/location.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/voiture.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/voiture.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/isi/diti5/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/isi/diti5/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dealercars.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/dealercars.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dealercars/WEB-INF/classes/com/isi/diti5/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/dealercars/WEB-INF/classes/com/isi/diti5/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dealercars/client.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/dealercars/client.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dealercars/location.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/dealercars/location.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dealercars/voiture.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/dealercars/voiture.xhtml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,57 +76,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/client.xhtml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/location.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="109" column="60" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/ClientController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
-                <element signature="e#884#885#0" expanded="true" />
-                <element signature="e#919#920#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1034#1035#0" expanded="true" />
-                <element signature="e#981#982#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1054#1055#0" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="39" column="239" selection-start-line="39" selection-start-column="239" selection-end-line="39" selection-end-column="239" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/service/AbstractFacade.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/LocationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+            <state relative-caret-position="1798">
+              <caret line="112" column="73" lean-forward="true" selection-start-line="112" selection-start-column="73" selection-end-line="112" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
-                <element signature="e#1263#1264#0" expanded="true" />
+                <element signature="e#499#500#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/clientedit.xhtml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/VoitureController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="1116">
+              <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+              <folding>
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/model/Location.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -127,12 +140,26 @@
       <find>properties</find>
       <find>sessionFactory</find>
       <find>../fonts</find>
+      <find>add</find>
+      <find>clientFacade</find>
+      <find>vehiculeBean</find>
+      <find>clientBean</find>
+      <find>vehicule</find>
+      <find>client</find>
     </findStrings>
     <replaceStrings>
       <replace>Vehicule</replace>
       <replace>id</replace>
       <replace>ressources/fonts</replace>
+      <replace>locationFacade</replace>
+      <replace>locationBean</replace>
+      <replace>location</replace>
+      <replace>location.idvehicule</replace>
+      <replace>location.idclient</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -144,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/page2.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/VéhiculeFacadeLocal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/LocationFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/VéhiculeFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/VehiculeFacade.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
@@ -157,15 +183,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/ressources/js/btp-bundle.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/ressources/js/jquery.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/header.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/model/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacadeLocal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/LocationFacadeLocal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/VehiculeFacadeLocal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/utils/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/home.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/location.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/voiture.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/default.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/ressources/css/fontawesome.min.css" />
         <option value="$PROJECT_DIR$/pom2.xml" />
@@ -174,9 +196,19 @@
         <option value="$PROJECT_DIR$/src/main/webapp/fragments/nav.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/fragments/footer.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/clientedit.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/AbstractFacade.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/client.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/ClientController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/AbstractFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/locationdetails.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/VoitureController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/voiture.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/locationedit.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/voitureedit.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/LocationFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacadeLocal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/LocationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/location.xhtml" />
       </list>
     </option>
   </component>
@@ -198,9 +230,12 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -241,6 +276,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="diti5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DealerCar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DealerCar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="diti5" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DealerCar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DealerCar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="diti5" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DealerCar" type="b2602c69:ProjectViewProjectNode" />
@@ -291,7 +344,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553097598835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553114817722" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -477,18 +530,18 @@
       <workItem from="1552476235601" duration="19999000" />
       <workItem from="1552506411240" duration="3002000" />
       <workItem from="1553084519477" duration="2887000" />
-      <workItem from="1553092572731" duration="3364000" />
+      <workItem from="1553092572731" duration="12486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29252000" />
+    <option name="totallyTimeSpent" value="38374000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2911302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17453505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -499,13 +552,13 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33209416" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19578686" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.2267658" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32961586" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.17348203" />
@@ -609,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/model/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/service/LocationFacadeLocal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -640,16 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/service/LocationFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -708,20 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/location.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/voiture.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/default.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -760,16 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacadeLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/fragments/header.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -791,10 +803,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacade.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/ClientController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="237">
+          <caret line="106" column="34" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -804,47 +816,122 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/clientedit.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/client.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="109" column="60" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
+        <state relative-caret-position="432">
+          <caret line="65" column="18" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="65" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/ClientController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/locationdetails.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="335">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/locationedit.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="144" column="88" selection-start-line="144" selection-start-column="88" selection-end-line="144" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/voitureedit.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="60" column="88" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/voiture.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="99" column="143" selection-start-line="99" selection-start-column="143" selection-end-line="99" selection-end-column="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/model/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/service/AbstractFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        <state relative-caret-position="356">
+          <caret line="88" column="5" lean-forward="true" selection-start-line="84" selection-end-line="88" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#458#459#0" expanded="true" />
             <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/service/LocationFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacadeLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/service/ClientFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/VoitureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+          <folding>
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/location.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="39" column="239" selection-start-line="39" selection-start-column="239" selection-end-line="39" selection-end-column="239" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/isi/diti5/controller/LocationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1798">
+          <caret line="112" column="73" lean-forward="true" selection-start-line="112" selection-start-column="73" selection-end-line="112" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,85 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	  xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+	<title>Home </title>
+	<!--HEADER CSS-->
+	<ui:insert name = "header" >
+		<ui:include src = "fragments/header.xhtml" />
+	</ui:insert>
+	<!--HEADER CSS-->
+
+</h:head>
+<h:body>
+	<!--NAV-->
+	<ui:insert name = "nav" >
+		<ui:include src = "fragments/nav.xhtml" />
+	</ui:insert>
+	<!--NAV-->
+
+
+	<!--CONTENT-->
+	<div class="container">
+		<h2 class="h3 text-right">DETAILS LOCATION </h2>
+
+		<h:form styleClass="form">
+			<div class="form-group row">
+				<label for="prenom" class="col-sm-2 col-form-label">Prenom</label>
+				<div class="col-sm-10">
+					<h:inputText id="prenom" required="true" value="#{clientBean.client.prenom}" a:placeholder="Prenom"  styleClass="form-control" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="nom" class="col-sm-2 col-form-label">Nom</label>
+				<div class="col-sm-10">
+					<h:inputText id="nom" required="true" value="#{clientBean.client.nom}"  styleClass="form-control"  a:placeholder="Nom" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="numpiece" class="col-sm-2 col-form-label">Numero piece</label>
+				<div class="col-sm-10">
+					<h:inputText id="numpiece" required="true" value="#{clientBean.client.numpiece}" a:placeholder="Numero piece"  styleClass="form-control" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="adresse" class="col-sm-2 col-form-label">Adresse</label>
+				<div class="col-sm-10">
+					<h:inputText id="adresse" required="true" value="#{clientBean.client.adresse}" a:placeholder="Adresse" styleClass="form-control" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="tel" class="col-sm-2 col-form-label">Telephone</label>
+				<div class="col-sm-10">
+					<h:inputText id="tel" required="true" value="#{clientBean.client.tel}" onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;" a:placeholder="Telephone"  styleClass="form-control" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="email" class="col-sm-2 col-form-label">Email</label>
+				<div class="col-sm-10">
+					<h:inputText id="email" value="#{clientBean.client.email}" a:placeholder="Email" required="true"  type="email" styleClass="form-control" />
+				</div>
+			</div>
+			<div class="row text-center" style="width: 100% ; margin: auto">
+				<h:commandButton action="#{clientBean.updateClient}" value="Mise a jour" styleClass="btn btn-primary" style="margin: auto" />
+			</div>
+
+		</h:form>
+
+		<hr/>
+
+	</div>
+	<!--CONTENT-->
+
+
+	<!--FOOTER JS-->
+	<ui:insert name = "footer" >
+		<ui:include src = "fragments/footer.xhtml" />
+	</ui:insert>
+	<!--FOOTER JS-->
+</h:body>
+</html>

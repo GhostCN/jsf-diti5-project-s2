@@ -54,7 +54,7 @@ public class ClientController implements Serializable {
         this.client = client;
     }
 
-    public String saveClient(){
+   /* public String saveClient(){
 
 
         try {
@@ -67,7 +67,7 @@ public class ClientController implements Serializable {
         }
         return "client";
 
-    }
+    }*/
     public String deleteClient(Client client){
         try {
             clientFacade.remove(client);
@@ -104,6 +104,7 @@ public class ClientController implements Serializable {
         try {
             clientFacade.create(client);
             System.out.println("Success!!!");
+            client = new Client();
             return "client?faces-redirect=true";
         }
         catch (Exception e){

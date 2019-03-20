@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
 	  xmlns:f="http://java.sun.com/jsf/core"
-	  xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	  xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	  xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 <h:head>
 	<title>Home </title>
 	<!--HEADER CSS-->
@@ -24,7 +25,84 @@
 
 	<!--CONTENT-->
 	<div class="container">
-		<h2 class="h3 text-right">Voiture </h2>
+		<h2 class="h3 text-right">VOITURE </h2>
+
+		<h:form styleClass="form">
+			<div class="form-group row">
+				<label for="matricule" class="col-sm-2 col-form-label">Marticule</label>
+				<div class="col-sm-10">
+					<h:inputText id="matricule" required="true" value="#{vehiculeBean.vehicule.matricule}" a:placeholder="Matricule"  styleClass="form-control" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="marque" class="col-sm-2 col-form-label">Marque</label>
+				<div class="col-sm-10">
+					<h:inputText id="marque" required="true" value="#{vehiculeBean.vehicule.marque}"  styleClass="form-control"  a:placeholder="Marque" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="modele" class="col-sm-2 col-form-label">Modele</label>
+				<div class="col-sm-10">
+					<h:inputText id="modele" required="true" value="#{vehiculeBean.vehicule.modele}" a:placeholder="Modele"  styleClass="form-control" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="couleur" class="col-sm-2 col-form-label">Couleur</label>
+				<div class="col-sm-10">
+					<h:inputText id="couleur" a:type="color"  required="true" value="#{vehiculeBean.vehicule.couleur}" a:placeholder="Couleur" styleClass="form-control" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="prixjour" class="col-sm-2 col-form-label">Prix par jour</label>
+				<div class="col-sm-10">
+					<h:inputText id="prixjour" required="true" value="#{vehiculeBean.vehicule.prixjour}" onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;" a:placeholder="Prix par jour"  styleClass="form-control" />
+				</div>
+			</div>
+			<div class="row text-center" style="width: 100% ; margin: auto">
+				<h:commandButton action="#{vehiculeBean.addVehicule}" value="Ajouter" styleClass="btn btn-primary" style="margin: auto" />
+			</div>
+
+		</h:form>
+
+		<hr/>
+
+		<div class="row">
+			<h:dataTable value = "#{vehiculeBean.vehicules}" var = "vehicule"
+						 styleClass = "table table-striped table-hover">
+
+				<h:column>
+					<f:facet name = "header">Marticule</f:facet>
+					#{vehicule.matricule}
+				</h:column>
+
+				<h:column>
+					<f:facet name = "header">Marque</f:facet>
+					#{vehicule.marque}
+				</h:column>
+
+				<h:column>
+					<f:facet name = "header">Modele</f:facet>
+					#{vehicule.modele}
+				</h:column>
+
+				<h:column>
+					<f:facet name = "header">Couleur</f:facet>
+					<span style="width: 110px;height: 28px;background: #{vehicule.couleur};display: inline-block"></span>
+				</h:column>
+				<h:column>
+					<f:facet name = "header">Prix par jour</f:facet>
+					#{vehicule.prixjour}
+				</h:column>
+				<h:column>
+					<f:facet name = "header">Action</f:facet>
+					<h:form >
+						<h:commandButton style="margin: 5px" styleClass="btn btn-primary btn-sm" action="#{vehiculeBean.editVehicule(vehicule)}"  value="Editer"/>
+						<h:commandButton style="margin: 5px" styleClass="btn btn-primary btn-sm" action="#{vehiculeBean.deleteVehicule(vehicule)}"  value="Supprimer"/>
+					</h:form>
+				</h:column>
+			</h:dataTable>
+
+		</div>
 	</div>
 	<!--CONTENT-->
 

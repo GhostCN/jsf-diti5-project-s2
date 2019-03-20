@@ -1,0 +1,14 @@
+com/isi/diti5/controller/ClientController.class
+com/isi/diti5/service/LocationFacade.class
+com/isi/diti5/service/VehiculeFacadeLocal.class
+com/isi/diti5/service/ClientFacadeLocal.class
+com/isi/diti5/router/RouterNavigation.class
+com/isi/diti5/model/Client.class
+com/isi/diti5/service/LocationFacadeLocal.class
+com/isi/diti5/controller/HomeController.class
+com/isi/diti5/service/ClientFacade.class
+com/isi/diti5/model/Location.class
+com/isi/diti5/utils/HibernateUtil.class
+com/isi/diti5/service/VehiculeFacade.class
+com/isi/diti5/service/AbstractFacade.class
+com/isi/diti5/model/Vehicule.class

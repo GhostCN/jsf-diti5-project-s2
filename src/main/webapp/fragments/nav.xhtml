@@ -1,0 +1,106 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+
+
+</h:head>
+<h:body>
+
+    <ui:composition>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Dealer Cars</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <h:link value="Accueil" outcome="home" class="nav-link" />
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Client" outcome="client" class="nav-link" />
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Voiture" outcome="voiture" class="nav-link" />
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Location" outcome="location" class="nav-link" />
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </ui:composition>
+
+</h:body>
+</html>
+
+        <!--<h2>Implicit Navigation</h2>
+            <hr />
+
+            <h:form>
+                <h3>Using Managed Bean</h3>
+                <h:commandButton action = "#{routes.page1}"
+                                 value = "Page1" />
+                <h3>Utilisation du nom de la vue</h3>
+                <h:commandButton action = "page2" value = "Page2" />
+            </h:form>
+            <br/>
+
+            <h2>Conditional Navigation</h2>
+            <hr />
+            <h:form>
+                <h:commandLink action = "#{routes.showPage}"
+                               value="Page1">
+                    <f:param name = "pageId" value = "1" />
+                </h:commandLink>
+                <br/>
+
+
+                <h:commandLink action = "#{routes.showPage}"
+                               value="Page2">
+                    <f:param name = "pageId" value = "2" />
+                </h:commandLink>
+
+                <br/>
+
+
+                <h:commandLink action = "#{routes.showPage}"
+                               value = "Home">
+                    <f:param name = "pageId" value = "3" />
+                </h:commandLink>
+            </h:form>
+            <br/>
+
+            <h2>"From Action" Navigation for face-config-xml</h2>
+            <hr />
+
+            <h:form>
+                <h:commandLink action = "#{routes.processPage1}"
+                               value = "Page1" />
+                <br/>
+
+                <h:commandLink action = "#{routes.processPage2}"
+                               value = "Page2" />
+
+            </h:form>
+            <br/>
+
+            <h2>Forward vs Redirection Navigation</h2>
+            <hr />
+            <h:form>
+                <h3>Forward</h3>
+                <h:commandButton action = "page1" value = "Page1" />
+                <h3>Redirect</h3>
+                <h:commandButton action = "page1?faces-redirect=true"
+                                 value = "Page1" />
+            </h:form>-->

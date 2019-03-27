@@ -26,6 +26,7 @@ public interface VehiculeFacadeLocal {
 
      Vehicule find(Long id);
      List<Vehicule> findAll();
+     Vehicule getVoitureByNMatricule(String matricule);
 
 
     

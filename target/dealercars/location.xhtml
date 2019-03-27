@@ -37,7 +37,7 @@
 					<div class="col-sm-10">
 						<h:inputText id="numpiece" required="true" value="#{locationBean.location.idclient.numpiece}" a:placeholder="Numero piece"  styleClass="form-control" >
 						<f:validateRequired />
-							<f:ajax event="change" listener="#{locationBean.getclient(locationBean.location.idclient.numpiece)}" render=":frmlocationAdd:prenom :frmlocationAdd:nom :frmlocationAdd:adresse :frmlocationAdd:tel :frmlocationAdd:email" />
+							<f:ajax event="change" listener="#{locationBean.getclient()}" render=":frmlocationAdd:prenom :frmlocationAdd:nom :frmlocationAdd:adresse :frmlocationAdd:tel :frmlocationAdd:email" />
 						</h:inputText>
 					</div>
 				</div>
@@ -81,7 +81,10 @@
 				<div class="form-group row">
 					<label for="matricule" class="col-sm-2 col-form-label">Marticule</label>
 					<div class="col-sm-10">
-						<h:inputText id="matricule" required="true" value="#{locationBean.location.idvehicule.matricule}" a:placeholder="Matricule"  styleClass="form-control" />
+						<h:inputText id="matricule" required="true" value="#{locationBean.location.idvehicule.matricule}" a:placeholder="Matricule"  styleClass="form-control" >
+							<f:validateRequired />
+							<f:ajax event="change" listener="#{locationBean.getVehicule()}" render=":frmlocationAdd:marque :frmlocationAdd:modele :frmlocationAdd:couleur :frmlocationAdd:prixjour frmlocationAdd:montantlocation" />
+						</h:inputText>
 					</div>
 				</div>
 				<div class="form-group row">
@@ -114,24 +117,46 @@
 			</legend>
 			<fieldset>
 
+
 				<div class="form-group row">
 					<label for="date" class="col-sm-2 col-form-label">Date</label>
 					<div class="col-sm-10">
 						<!--<h:inputHidden value="#{locationBean.location.idclient}" id="idclient" />
 						<h:inputHidden value="#{locationBean.location.idvehicule}" id="idvehicule" />-->
-						<h:inputText id="date"  a:type="date"  required="true" value="#{locationBean.location.date}" a:placeholder="Date" styleClass="form-control" />
+						<!--<h:inputText id="date" a:type="date"  required="true" value="#{locationBean.location.date}" a:placeholder="Date" styleClass="form-control" />-->
+						<h:inputText id="date"  required="true" requiredMessage="La date est require" value="#{locationBean.location.date}"  styleClass="form-control">
+							<f:convertDateTime type="date" pattern="dd/MM/yyyy" />
+						</h:inputText>
 					</div>
 				</div>
-				<div class="form-group row">
+				<!--<div class="form-group row">
 					<label for="nbjour" class="col-sm-2 col-form-label">Nombre de jour</label>
 					<div class="col-sm-10">
 						<h:inputText id="nbjour" required="true" value="#{locationBean.location.nbjour}" onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;" a:placeholder="Nombre de jour"  styleClass="form-control" />
+					</div>
+				</div>-->
+				<div class="form-group row text-center" style="text-align: center;margin: auto;display: inline-block">
+					<h:outputText value="${locationBean.message}" id="message" style="color: red;font-size: 10px;text-align: center" />
+				</div>
+				<div class="form-group row">
+
+					<label for="nbjour" class="col-sm-2 col-form-label">Nombre de jour</label>
+					<div class="col-sm-10">
+						<h:selectOneMenu id="nbjour" value="#{locationBean.location.nbjour}" styleClass="form-control">
+							<f:ajax event="change" listener="#{locationBean.calculePrice()}" render="frmlocationAdd:montantlocation frmlocationAdd:message" />
+							<f:selectItem itemValue="0"  itemLabel="Selectionner le nombre de jour"/>
+							<f:selectItem itemValue="1"  itemLabel="1"/>
+							<f:selectItem itemValue="2"  itemLabel="2"/>
+							<f:selectItem itemValue="3"  itemLabel="3"/>
+							<f:selectItem itemValue="4"  itemLabel="4"/>
+							<f:selectItem itemValue="5"  itemLabel="5"/>
+						</h:selectOneMenu>
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="montantlocation" class="col-sm-2 col-form-label">Montant location</label>
 					<div class="col-sm-10">
-						<h:inputText id="montantlocation" required="true" value="#{locationBean.location.montantlocation}" onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;" a:placeholder="Montant location"  styleClass="form-control" />
+						<h:inputText readonly="true" id="montantlocation" required="true" value="#{locationBean.location.montantlocation}" onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;" a:placeholder="Montant location"  styleClass="form-control" />
 					</div>
 				</div>
 				<div class="form-group row">
@@ -150,6 +175,7 @@
 			</div>
 
 		</h:form>
+		<h:messages />
 
 		<hr/>
 
@@ -196,5 +222,12 @@
 		<ui:include src = "fragments/footer.xhtml" />
 	</ui:insert>
 	<!--FOOTER JS-->
+
+	<h:outputScript>
+		/*$("#frmlocationAdd:nbjour").on('change',function (e) {
+			var montant =  (parseFloat($("#frmlocationAdd:prixjour").val()) || 0 ) * ( parseInt($("#frmlocationAdd:nbjour").val() ) || 0)
+			$("#frmlocationAdd:montantlocation").val(montant)
+		});*/
+	</h:outputScript>
 </h:body>
 </html>

@@ -7,11 +7,12 @@ import com.isi.diti5.service.VehiculeFacadeLocal;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ViewScoped;
 import java.io.Serializable;
 import java.util.List;
 
 @ManagedBean(name = "vehiculeBean", eager = true)
-@SessionScoped
+@ViewScoped
 public class VoitureController implements Serializable {
     public VoitureController(){
         vehicule = new Vehicule();

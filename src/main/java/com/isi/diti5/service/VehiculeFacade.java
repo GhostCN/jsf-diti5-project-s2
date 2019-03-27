@@ -12,6 +12,7 @@ import org.hibernate.Session;
 
 
 import javax.ejb.Stateless;
+import java.util.List;
 
 /**
  *
@@ -30,5 +31,14 @@ public class VehiculeFacade extends AbstractFacade<Vehicule> implements Vehicule
     public VehiculeFacade() {
         super(Vehicule.class);
     }
-    
+
+    @Override
+    public Vehicule getVoitureByNMatricule(String matricule) {
+        List<Vehicule> vehiculeList=  getSession().createQuery("SELECT v from Vehicule v where v.matricule  = :mat").setParameter("mat",matricule).list();
+        if(vehiculeList.size() > 0)
+        {
+            return  vehiculeList.get(0);
+        }
+        return null;
+    }
 }

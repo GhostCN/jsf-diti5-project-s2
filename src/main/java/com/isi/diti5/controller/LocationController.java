@@ -9,13 +9,15 @@ import com.isi.diti5.service.VehiculeFacadeLocal;
 import javax.ejb.EJB;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+import javax.faces.bean.SessionScoped;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import java.io.Serializable;
 import java.util.List;
 
 @ManagedBean(name = "locationBean", eager = true)
-@ViewScoped
+@SessionScoped
 public class LocationController implements Serializable {
     public LocationController(){
         initLocation();
@@ -69,6 +71,7 @@ public class LocationController implements Serializable {
     public String deleteLocation(Location location){
         try {
             locationFacade.remove(location);
+            this.location = new Location();
             return "location?faces-redirect=true";
         }catch (Exception e){
             e.printStackTrace();

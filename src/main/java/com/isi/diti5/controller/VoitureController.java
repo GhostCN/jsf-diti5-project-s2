@@ -12,7 +12,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @ManagedBean(name = "vehiculeBean", eager = true)
-@ViewScoped
+@SessionScoped
 public class VoitureController implements Serializable {
     public VoitureController(){
         vehicule = new Vehicule();

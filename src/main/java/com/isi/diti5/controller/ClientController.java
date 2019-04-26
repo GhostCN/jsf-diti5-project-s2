@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @ManagedBean(name = "clientBean", eager = true)
-@ViewScoped
+@SessionScoped
 public class ClientController implements Serializable {
     public ClientController(){
         client = new Client();
